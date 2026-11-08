@@ -1,6 +1,6 @@
 {
   "html": "experiments/s1_3_recent_weighted_slope/market_explorer.html",
-  "html_sha256": "08923021a154a00c96bb8749edb8c03714d411156c26a304a732b4d1f3c04785",
+  "html_sha256": "dad962d4e82fe843c431f08572c5b71b0c70495dad3aaccabe32da1125db2ced",
   "raw_sha256": "23972d31dd5ff90b46da05703e1b75dbfbbbbfde6efcd26b6b9ad24ee3b65503",
   "raw_rows": 70176,
   "start": "2020-01-01 00:00:00+00:00",
@@ -21,8 +21,8 @@
   ],
   "raw_prices": "unrounded original training OHLCV",
   "source_hashes": {
-    "tools/s1_3_explorer_template.html": "36775d80ef8f3c95d9867433a41834a4b5b26dd91fae609608f149be77c7b98b",
-    "tools/build_s1_3_explorer.py": "6fb933b912c741d0579f2d72c3d25ae5c5a4c26ea3170b0cc6a8def6e2d48735",
+    "tools/s1_3_explorer_template.html": "962a6442cabc74d444ffbb366fdd54f4c8b85552af9128d062172770c5b9d9ca",
+    "tools/build_s1_3_explorer.py": "bec37d15173837bd65cb04835b2a829b9adb5a1c478823a658c8f1b86861beb9",
     "experiments/s1_3_recent_weighted_slope/slope_signal_paths.csv": "9fb5e3124f2625eddd042efd7d2d7ed12f642e0b07ae6fc23d8263c09992faca",
     "experiments/s1_3_recent_weighted_slope/trades_all.csv": "fbf45a0056965388458c4471e2b081edd73c64c77cc55eecf9888183cf94f087",
     "experiments/s1_3_recent_weighted_slope/executions_all.csv": "8e27ec1376b9d750e78cee259b627a2d7b484a79c4ed54782eaf120c7a4d7496",
@@ -32,7 +32,6 @@
   "holdout_used": false,
   "display_only_aggregation": "pixel groups of OHLCV / min-max derived-series envelopes; hover always raw bar",
   "slope_display_unit": "bp/hour: original 15m slope * 40000; hourly reference internal value = hourly slope / 4, display * 40000; no signal scaling",
-  "reference_slope": "OLS log-close N16 on complete UTC 1h candles (four contiguous raw bars each), trailing sixteen hourly closes; available only at hour close; held until next hour close; display only, no new backtest",
-  "reference_15m_n16": "OLS on sixteen original 15m log closes, updated at each 15m close; display only; original N64 trading ledger unchanged",
+  "reference_slope": "OLS log-close N64 on complete UTC 1h candles (four contiguous raw bars each), trailing sixty-four hourly closes; available only at hour close; held until next hour close; display only, no new backtest",
   "raw_and_derived_separated": true
 }
