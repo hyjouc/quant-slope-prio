@@ -45,6 +45,7 @@ def build():
     index=lambda s:int(dates.get_indexer([pd.Timestamp(s)])[0])
     data=dict(first=stamp(d.date.iloc[0]),step=900,performance=96,models=models,
         referenceSlope=hourly_reference(d).tolist(),
+        reference15mN16=estimate(d.close,16,'B_ols').tolist(),
         raw={c:d[c].tolist() for c in ['open','high','low','close','volume']},
         slopes={name:slopes[name+'_slope'].tolist() for name in models},
         signals={name:slopes[name+'_signal'].tolist() for name in models},
@@ -78,6 +79,7 @@ def build():
         strategy_rerun=False,holdout_used=False,display_only_aggregation='pixel groups of OHLCV / min-max derived-series envelopes; hover always raw bar',
         slope_display_unit='bp/hour: original 15m slope * 40000; hourly reference internal value = hourly slope / 4, display * 40000; no signal scaling',
         reference_slope='OLS log-close N16 on complete UTC 1h candles (four contiguous raw bars each), trailing sixteen hourly closes; available only at hour close; held until next hour close; display only, no new backtest',
+        reference_15m_n16='OLS on sixteen original 15m log closes, updated at each 15m close; display only; original N64 trading ledger unchanged',
         raw_and_derived_separated=True)
     (OUT/'explorer_provenance.json').write_text(json.dumps(evidence,indent=2,ensure_ascii=False),encoding='utf-8')
     manifest=json.loads((OUT/'artifact_manifest.json').read_text())
