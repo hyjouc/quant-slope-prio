@@ -1,0 +1,10 @@
+{
+  "stage": "stage1_audit_only",
+  "date_asia_shanghai": "2026-11-08",
+  "indicator_audit": "PASS: all 140256 V18 slope and scaled slope observations exactly equal",
+  "year_boundary_prefix_audits": [2021, 2022, 2023],
+  "pytest": {"passed":5,"skipped":1,"skip_reason":"execution engine not implemented or authorized in stage 1"},
+  "tests_cover": ["constant price and V18 initialization","signal direction and inclusive neutral boundary","invalid indicators","prior96 sample standard deviation","no numerator demeaning","future perturbation","prefix causality","current value excluded from denominator"],
+  "not_validated": ["trade execution","strategy profitability","theta ranking","funding or liquidation","untouched independent OOS","exchange authenticity"],
+  "input_hashes_unchanged": true
+}

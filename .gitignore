@@ -1,0 +1,10 @@
+.deps/
+__pycache__/
+.pytest_cache/
+*.pyc
+data/
+.venv/
+*.feather
+*.parquet
+.env
+.superseded/
