@@ -1,0 +1,5 @@
+candidate,method,N,time,source_signal_bar,action,direction,raw_price,fill_price,quantity,notional,fee,slippage_usdt,zero_volume,account_before_fill,margin_budget_shortfall,execution_uncertainty,model
+EWLS_H64_N64,EWLS_H64,64,2020-01-02 01:00:00+00:00,2020-01-02 00:45:00+00:00,close,long,130.55,130.52389,15.3226059769,1999.96613704,0.99998306852,0.400073242056,True,9999.36621028,False,zero-volume candle; hypothetical fill not exchange-verified,H64
+EWLS_H64_N64,EWLS_H64,64,2020-01-02 01:00:00+00:00,2020-01-02 00:45:00+00:00,open,short,130.55,130.52389,15.3228654157,2000,1,0.400080016003,True,9997.96615397,False,zero-volume candle; hypothetical fill not exchange-verified,H64
+EWLS_H32_N64,EWLS_H32,64,2020-01-02 00:30:00+00:00,2020-01-02 00:15:00+00:00,close,long,130.55,130.52389,15.3226059769,1999.96613704,0.99998306852,0.400073242056,True,9999.36621028,False,zero-volume candle; hypothetical fill not exchange-verified,H32
+EWLS_H32_N64,EWLS_H32,64,2020-01-02 00:30:00+00:00,2020-01-02 00:15:00+00:00,open,short,130.55,130.52389,15.3228654157,2000,1,0.400080016003,True,9997.96615397,False,zero-volume candle; hypothetical fill not exchange-verified,H32

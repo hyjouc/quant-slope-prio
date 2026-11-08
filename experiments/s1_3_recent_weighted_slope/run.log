@@ -1,0 +1,9 @@
+S1.3 fixed H: infinity,64,32,16,8 | training only | no stop | no selection
+All 140 base tracked files unchanged
+PASS baseline gate: exact infinity slopes/signals/serialized ledgers; curves/costs/directions reconciled
+OLS complete: net 4487.470063 | closed 1147 | fees 2299.267155 | slip 919.707251 | repeated exactly
+H64 complete: net 4028.743491 | closed 1163 | fees 2331.241841 | slip 932.497108 | repeated exactly
+H32 complete: net 3311.003708 | closed 1183 | fees 2371.248201 | slip 948.499625 | repeated exactly
+H16 complete: net 767.862858 | closed 1366 | fees 2737.227924 | slip 1094.891433 | repeated exactly
+H8 complete: net -2487.528339 | closed 2028 | fees 4061.239314 | slip 1624.495932 | repeated exactly
+PASS all accounting, independent direction, temporal, frozen-file and determinism gates. STOP for review; no H selected, no holdout.

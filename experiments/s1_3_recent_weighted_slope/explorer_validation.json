@@ -1,0 +1,24 @@
+{
+  "desktop_viewport": [
+    1440,
+    1000
+  ],
+  "mobile_viewport": [
+    390,
+    844
+  ],
+  "mobile_document_width": 390,
+  "raw_rows": 70176,
+  "checked": [
+    "Five model summary agrees with saved CSV",
+    "Model switch OLS to H8 updates charts and statistics",
+    "Zoom 672 bars to 336 bars",
+    "Click actual trade selects id10 and focuses 81 bars",
+    "Full-range button selects 0..70176",
+    "Four time-aligned chart panels render",
+    "Mobile layout has no document-level horizontal overflow",
+    "Actual raw OHLCV hover values and execution timestamps distinct",
+    "No strategy or parameter change"
+  ],
+  "visual_review": "Desktop chart screenshot and mobile layout inspected; final HTML adds zero-floor volume axis and embedded empty favicon."
+}

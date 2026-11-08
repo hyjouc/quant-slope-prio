@@ -1,0 +1,35 @@
+{
+  "html": "experiments/s1_3_recent_weighted_slope/market_explorer.html",
+  "html_sha256": "a252a43fa0e2958d78538e67400d4c0d2d620fcd32a6baf5c4e4d85b85428fb9",
+  "raw_sha256": "23972d31dd5ff90b46da05703e1b75dbfbbbbfde6efcd26b6b9ad24ee3b65503",
+  "raw_rows": 70176,
+  "start": "2020-01-01 00:00:00+00:00",
+  "end": "2021-12-31 23:45:00+00:00",
+  "data_columns": [
+    "open",
+    "high",
+    "low",
+    "close",
+    "volume"
+  ],
+  "models": [
+    "OLS",
+    "H64",
+    "H32",
+    "H16",
+    "H8"
+  ],
+  "raw_prices": "unrounded original training OHLCV",
+  "source_hashes": {
+    "tools/s1_3_explorer_template.html": "717b83a5b4f1c9844e6c186e040715f36f120ff9f863e952cf2ddbfa696e7c1e",
+    "tools/build_s1_3_explorer.py": "abf9d9ff966139b2393503eeb127db6b25bff671941b598e094b66faf0d37422",
+    "experiments/s1_3_recent_weighted_slope/slope_signal_paths.csv": "9fb5e3124f2625eddd042efd7d2d7ed12f642e0b07ae6fc23d8263c09992faca",
+    "experiments/s1_3_recent_weighted_slope/trades_all.csv": "fbf45a0056965388458c4471e2b081edd73c64c77cc55eecf9888183cf94f087",
+    "experiments/s1_3_recent_weighted_slope/executions_all.csv": "8e27ec1376b9d750e78cee259b627a2d7b484a79c4ed54782eaf120c7a4d7496",
+    "experiments/s1_3_recent_weighted_slope/equity_curves.csv": "f1cb8fe2b80bd85254baf2a112793ab84324db93e07a55357cc9d929d7863902"
+  },
+  "strategy_rerun": false,
+  "holdout_used": false,
+  "display_only_aggregation": "pixel groups of OHLCV / min-max derived-series envelopes; hover always raw bar",
+  "raw_and_derived_separated": true
+}

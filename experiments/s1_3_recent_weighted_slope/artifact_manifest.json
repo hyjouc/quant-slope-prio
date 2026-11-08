@@ -1,0 +1,164 @@
+{
+  "algorithm": "sha256",
+  "excludes": [
+    "artifact_manifest.json"
+  ],
+  "artifacts": {
+    "annual_comparison.csv": {
+      "sha256": "3bbc36067ec441508cb99d03731b7b5a94c71c8eedef1d06673efaa886c5eba4",
+      "bytes": 6388
+    },
+    "diagnostic_metadata.json": {
+      "sha256": "6fbe9e4242ed9b969673c7c2d055701019757487cadc40d0bb123b739bf5a588",
+      "bytes": 23930
+    },
+    "drawdown_curves.csv": {
+      "sha256": "fa7dc42cdc8286af1d8e16301abf968f3ed63b167006e4f40d73ce720c1fb2e8",
+      "bytes": 6744707
+    },
+    "drawdown_episodes.csv": {
+      "sha256": "98936c28a9aaed2f94721b462ad33153d4be58e1ab831a2549e4d8ef3f34ce76",
+      "bytes": 227393
+    },
+    "equity_curves.csv": {
+      "sha256": "f1cb8fe2b80bd85254baf2a112793ab84324db93e07a55357cc9d929d7863902",
+      "bytes": 6759024
+    },
+    "executions_all.csv": {
+      "sha256": "8e27ec1376b9d750e78cee259b627a2d7b484a79c4ed54782eaf120c7a4d7496",
+      "bytes": 2966131
+    },
+    "figures/drawdown_curves.png": {
+      "sha256": "029a5b99ea8b3b54668d9fa9fbd623200d474ccf035007eae18e795b53af0926",
+      "bytes": 532088
+    },
+    "figures/equity_curves.png": {
+      "sha256": "4c1ec79a32e891d5082032d1cbdc8615e27d61135fd51e12ff6979e62152d288",
+      "bytes": 331511
+    },
+    "figures/H_drawdown.png": {
+      "sha256": "2b8e309e021ff7a659bfbd2d60dc8c124682dff73bcddbad8de52bf4e6f422fe",
+      "bytes": 60081
+    },
+    "figures/H_net_profit.png": {
+      "sha256": "4f5a7729f086d1aed11fd72da71cd2410b92723490ae1c70a2b025f245e2f4d3",
+      "bytes": 59533
+    },
+    "figures/H_trade_count.png": {
+      "sha256": "0d1b1adf2b0e3017fd6e5ab9921bd4a18feac6fe95d62206c54bf02edcf004bb",
+      "bytes": 58057
+    },
+    "figures/long_short.png": {
+      "sha256": "2abfcacde886d71550baa52912cfac210b6b35ffc282e519182fb6e5409affb7",
+      "bytes": 61898
+    },
+    "figures/profit_concentration.png": {
+      "sha256": "bc5c0a728f06c20f6a89b098fd8d8982cb9f8fe5fdc8f165192d49d7ec6837b5",
+      "bytes": 144716
+    },
+    "figures/slope_comparison.png": {
+      "sha256": "76344dfd3237b4c9ebdc2e3ad17d03cbb3136e5188497147b9429c75cd70d778",
+      "bytes": 279998
+    },
+    "figures/synthetic_responses.png": {
+      "sha256": "bc276b012aa86424c01c09a93005062f609b88e6529953e9c16655f54758c3af",
+      "bytes": 368395
+    },
+    "long_short_comparison.csv": {
+      "sha256": "92a1980340168ec20460b12d5bd55d9f65cccbc92ed2ffd009e282d659cbb971",
+      "bytes": 17464
+    },
+    "monthly_comparison.csv": {
+      "sha256": "7e477dbec5e98209092121777778a6e52065f312f42724e50d0bf6fe39146c8f",
+      "bytes": 57223
+    },
+    "open_positions.csv": {
+      "sha256": "178395af989e416e4dfe28810d56407467a2a7f86f6b3a5912c65a0c1b658325",
+      "bytes": 1661
+    },
+    "original_top10_summary.csv": {
+      "sha256": "df1026a3b10c95c34c4c6dba2102577d7306bb2a2084775cdf52ce5cf0fe7353",
+      "bytes": 559
+    },
+    "original_top10_winner_audit.csv": {
+      "sha256": "2937a8610b506b3e4929beb3948679fad572ca0f17c168405e7b4a93f6e51f4b",
+      "bytes": 12812
+    },
+    "parameter_comparison.csv": {
+      "sha256": "c15e3a3e3d8cc26a93c3aa3f2f8606f1b9ac65d99bf3305b8253c6b0bf4e5cd6",
+      "bytes": 3713
+    },
+    "parameter_stability.csv": {
+      "sha256": "ae523715f86a50b8f807abd9c5733c2d2b2cef5946d889125f2fc7c49e825840",
+      "bytes": 469
+    },
+    "profit_concentration.csv": {
+      "sha256": "48867b7a6abca421cd0975fdc611840fc5c58c318414cfd793627f5eff175baf",
+      "bytes": 18013
+    },
+    "run.log": {
+      "sha256": "ab78680ef71d90588ff25fb62644df0348f29ec125495a0ab6c9d6b8d270304e",
+      "bytes": 860
+    },
+    "run_experiment.py": {
+      "sha256": "6807512ca452bf66ca5893b63bd4396ea04e6d7233c3b70df65a8ff630fbb86c",
+      "bytes": 38232
+    },
+    "s1_3_report.md": {
+      "sha256": "2ccb86534a5ddfbee8e631593cd2127237cac41e0bbd5ab35da68cf6d824651e",
+      "bytes": 19395
+    },
+    "signal_flip_comparison.csv": {
+      "sha256": "3c126095637c1f2213c7b6e062a477355c4d9ad0d9031452468ee4cabc28fe27",
+      "bytes": 1004204
+    },
+    "signal_response_analysis.csv": {
+      "sha256": "ffb84899b269e8edb13877cd30d94e292f67f68bd0ce95da83da73675aef0b91",
+      "bytes": 1127
+    },
+    "slope_signal_paths.csv": {
+      "sha256": "9fb5e3124f2625eddd042efd7d2d7ed12f642e0b07ae6fc23d8263c09992faca",
+      "bytes": 9137077
+    },
+    "synthetic_paths.csv": {
+      "sha256": "a04c8dcdb2b33d2511fb0c492ba16e0a0e5930e7f7048b4a7679145c4d9c340c",
+      "bytes": 1477393
+    },
+    "synthetic_response_tests.csv": {
+      "sha256": "adc5416152b042de7bd3d053f3ce61c45029a024cb360078499f7c06375f42f2",
+      "bytes": 4292
+    },
+    "test_results.log": {
+      "sha256": "6b25e22044ba0028a0871371ab9f83a7f2c3c746b7daf09b8a04ac888f238755",
+      "bytes": 101
+    },
+    "trade_level_comparison.csv": {
+      "sha256": "9b906a09b74a0ef16b5ec974457078d825245991c1b805c38464db44f3408808",
+      "bytes": 1405088
+    },
+    "trades_all.csv": {
+      "sha256": "fbf45a0056965388458c4471e2b081edd73c64c77cc55eecf9888183cf94f087",
+      "bytes": 2441452
+    },
+    "zero_volume_execution_audit.csv": {
+      "sha256": "c248ecae811a8072ad1b2d8ac428dc1e3e170da0805df8cf25efde1a2d80241c",
+      "bytes": 1167
+    },
+    "explorer_provenance.json": {
+      "sha256": "9dfc06cef103113a1b2a2013bcddea86033114951621d5d4b1a53541c252e955",
+      "bytes": 1558
+    },
+    "market_explorer.html": {
+      "sha256": "a252a43fa0e2958d78538e67400d4c0d2d620fcd32a6baf5c4e4d85b85428fb9",
+      "bytes": 18362378
+    },
+    "explorer_preview.png": {
+      "sha256": "f649b4293e6a352ff7302df7b83ed9d5b6564614002c1d8b04ef437348294b59",
+      "bytes": 216356
+    },
+    "explorer_validation.json": {
+      "sha256": "a321a67673225e4a1fee7c50bf8756b85f04926fa04432584e52e19b9bbb6fb5",
+      "bytes": 793
+    }
+  }
+}

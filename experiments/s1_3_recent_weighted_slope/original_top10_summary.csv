@@ -1,0 +1,6 @@
+model,H,top10_original_net_pnl,top10_actual_interval_pnl,top10_interval_retention_ratio,top10_intervals_positive,top10_covering_early_exits,top10_no_same_direction_cover,top10_covering_smaller_positive,top10_interval_smaller_positive,top10_intervals_became_losses
+OLS,,4468.0043397,4468.0043397,1,10,0,0,0,0,0
+H64,64,4468.0043397,3918.813901,0.877083727556,10,8,0,8,7,0
+H32,32,4468.0043397,3834.43242441,0.858198008079,10,8,0,8,6,0
+H16,16,4468.0043397,3478.8455025,0.778612829803,10,9,0,8,7,0
+H8,8,4468.0043397,2217.45765031,0.496297112026,7,10,0,7,6,3
