@@ -1,0 +1,11 @@
+candidate,all_trades_events_equity_exact,prefix_exact,future_perturbation_exact
+A_endpoint_N8,True,True,True
+A_endpoint_N16,True,True,True
+A_endpoint_N32,True,True,True
+A_endpoint_N64,True,True,True
+A_endpoint_N96,True,True,True
+B_ols_N8,True,True,True
+B_ols_N16,True,True,True
+B_ols_N32,True,True,True
+B_ols_N64,True,True,True
+B_ols_N96,True,True,True

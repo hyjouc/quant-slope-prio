@@ -1,0 +1,3 @@
+method,candidates,profitable_candidates,both_years_positive_candidates,net_min,net_median,net_max,worst_drawdown,median_profit_factor,median_sharpe,median_monthly_profit_ratio,median_closed_trades
+A_endpoint,5,0,0,-36124.9718261,-18191.239085,-1663.84113287,36216.8769875,0.717860923422,-4.22791464258,0.0416666666667,6322
+B_ols,5,2,1,-26378.1846059,-6020.67154777,4487.47006292,26477.0875309,0.862307211579,-1.51779490129,0.25,2380

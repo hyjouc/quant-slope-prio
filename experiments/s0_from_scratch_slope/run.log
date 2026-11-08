@@ -1,0 +1,14 @@
+2026-11-08 17:44:18,101 START ten fixed candidates, training only; no automatic selection; config SHA256 17f20bcbd7e66f05b06c30067203122b3066d7260a8ef6e828219dadc122f149
+2026-11-08 17:44:18,664 Raw snapshot hash and continuity PASS; training-only input 70176 bars
+2026-11-08 17:44:33,182 A_endpoint_N8 net -36124.97 DD 36216.88 PF 0.6701 closed 13077 fees 26159.22 slip 10463.69 zero-volume fills 16; repeat/reconciliation PASS
+2026-11-08 17:44:45,583 A_endpoint_N16 net -25491.97 DD 25554.13 PF 0.6957 closed 9031 fees 18067.21 slip 7226.88 zero-volume fills 2; repeat/reconciliation PASS
+2026-11-08 17:44:55,269 A_endpoint_N32 net -18191.24 DD 18416.51 PF 0.7179 closed 6322 fees 12649.24 slip 5059.70 zero-volume fills 4; repeat/reconciliation PASS
+2026-11-08 17:45:03,626 A_endpoint_N64 net -5070.94 DD 6198.74 PF 0.8840 closed 4155 fees 8315.27 slip 3326.11 zero-volume fills 0; repeat/reconciliation PASS
+2026-11-08 17:45:11,380 A_endpoint_N96 net -1663.84 DD 4045.98 PF 0.9517 closed 3215 fees 6435.22 slip 2574.09 zero-volume fills 2; repeat/reconciliation PASS
+2026-11-08 17:45:23,582 B_ols_N8 net -26378.18 DD 26477.09 PF 0.7224 closed 9476 fees 18957.24 slip 7582.89 zero-volume fills 12; repeat/reconciliation PASS
+2026-11-08 17:45:32,772 B_ols_N16 net -11618.06 DD 12130.14 PF 0.8145 closed 4741 fees 9487.20 slip 3794.88 zero-volume fills 4; repeat/reconciliation PASS
+2026-11-08 17:45:40,050 B_ols_N32 net -6020.67 DD 6845.72 PF 0.8623 closed 2380 fees 4765.24 slip 1906.10 zero-volume fills 2; repeat/reconciliation PASS
+2026-11-08 17:45:46,495 B_ols_N64 net 4487.47 DD 2555.87 PF 1.1721 closed 1147 fees 2299.27 slip 919.71 zero-volume fills 0; repeat/reconciliation PASS
+2026-11-08 17:45:52,925 B_ols_N96 net 3546.12 DD 2472.79 PF 1.1691 closed 751 fees 1507.22 slip 602.89 zero-volume fills 2; repeat/reconciliation PASS
+2026-11-08 17:46:29,147 COMPLETE training only; no selection, freeze or second search; data/config hashes unchanged
+Delivery review: 34 unit tests passed; seven figures visually inspected; interpretation expanded from fixed training tables only. No additional backtest, holdout, grid search or selection.

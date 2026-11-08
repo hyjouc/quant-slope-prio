@@ -1,0 +1,124 @@
+{
+  "task_id": "S0_FROM_SCRATCH_SLOPE_ESTIMATOR_2020_2023",
+  "config_sha256": "17f20bcbd7e66f05b06c30067203122b3066d7260a8ef6e828219dadc122f149",
+  "data": {
+    "path": "E:\\freqtrade\\user_data\\data\\slope\\stage4_trade_attribution\\inputs\\ohlcv_pre2024.feather",
+    "sha256": "23972d31dd5ff90b46da05703e1b75dbfbbbbfde6efcd26b6b9ad24ee3b65503",
+    "raw_bars": 140256,
+    "raw_first": "2020-01-01 00:00:00+00:00",
+    "raw_last": "2023-12-31 23:45:00+00:00",
+    "missing": 0,
+    "duplicates": 0,
+    "raw_zero_volume": 97,
+    "training_bars": 70176,
+    "training_first": "2020-01-01 00:00:00+00:00",
+    "training_last": "2021-12-31 23:45:00+00:00",
+    "training_zero_volume": 39,
+    "columns_read": [
+      "date",
+      "open",
+      "high",
+      "low",
+      "close",
+      "volume"
+    ],
+    "holdout_usage": "snapshot structural QC only; 2022/2023 removed before indicators/execution/metrics",
+    "policy": "zero-volume records retained unchanged; no forward fill or price imputation"
+  },
+  "actual_performance_first": "2020-01-02 00:00:00+00:00",
+  "actual_performance_last": "2021-12-31 23:45:00+00:00",
+  "performance_bars": 70080,
+  "candidates": 10,
+  "grid": [
+    8,
+    16,
+    32,
+    64,
+    96
+  ],
+  "methods": [
+    "A_endpoint",
+    "B_ols"
+  ],
+  "legacy_code_imported": false,
+  "old_feature_columns_read": false,
+  "post2023_market_data_read": false,
+  "holdout_indicators_computed": false,
+  "holdout_performance_computed": false,
+  "model_or_N_selected": false,
+  "freeze_record_generated": false,
+  "zero_volume_execution_count": 44,
+  "margin_shortfall_entry_count": 25998,
+  "nonpositive_equity_candidates": [
+    "A_endpoint_N8",
+    "A_endpoint_N16",
+    "A_endpoint_N32",
+    "B_ols_N8",
+    "B_ols_N16"
+  ],
+  "numerical_policy": "OLS subtract first window value then exact centered x sum; strict zero, no epsilon threshold; each window independently summed",
+  "accounting": "fixed entry fill notional 2000, fees separate; initial account 10000; no compounding; raw-open slippage costs use actual quantities",
+  "statistics": "bar-close MTM; daily PnL/10000; rf0; sqrt365; Sharpe sample SD; Sortino all-day negative-part RMS; period attribution by candle open label",
+  "annual": "continuous holdings, period MTM deltas; PF/win/holding stats entire closed trade assigned to exit period",
+  "pending_final_orders": {
+    "A_endpoint_N8": {
+      "last_signal": -1,
+      "position": 1
+    },
+    "A_endpoint_N16": {
+      "last_signal": 1,
+      "position": 1
+    },
+    "A_endpoint_N32": {
+      "last_signal": -1,
+      "position": -1
+    },
+    "A_endpoint_N64": {
+      "last_signal": -1,
+      "position": -1
+    },
+    "A_endpoint_N96": {
+      "last_signal": -1,
+      "position": -1
+    },
+    "B_ols_N8": {
+      "last_signal": -1,
+      "position": -1
+    },
+    "B_ols_N16": {
+      "last_signal": 1,
+      "position": 1
+    },
+    "B_ols_N32": {
+      "last_signal": -1,
+      "position": -1
+    },
+    "B_ols_N64": {
+      "last_signal": -1,
+      "position": -1
+    },
+    "B_ols_N96": {
+      "last_signal": -1,
+      "position": -1
+    }
+  },
+  "checks": {
+    "actual_full_grid_repeat": true,
+    "real_training_prefix_and_future_perturbation": true,
+    "all_ledger_reconciliations": true
+  },
+  "versions": {
+    "numpy": "2.4.6",
+    "pandas": "3.0.3",
+    "pyarrow": "26.0.1",
+    "matplotlib": "3.11.0"
+  },
+  "python": "3.14.3",
+  "limitations": [
+    "all four years historically researched, not untouched OOS",
+    "zero-volume executions hypothetical",
+    "no funding or exchange liquidation/depth/latency model",
+    "training only; no automatic winner"
+  ],
+  "figure_policy": "seven PNGs; complete 15m curves; illustrative estimator comparison fixed N32 first 7 days; no smoothing"
+}

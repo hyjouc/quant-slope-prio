@@ -1,0 +1,16 @@
+{
+  "unit_tests_passed": 34,
+  "unit_tests_skipped": 0,
+  "full_grid_exact_repeat": true,
+  "ledger_reconciliation": true,
+  "required_files": 14,
+  "figures": 7,
+  "visual_review": "all seven PNGs inspected via contact sheet; labels and legends readable; no smoothing or clipping",
+  "zero_volume_execution_rows": 44,
+  "performance_years": [
+    2020,
+    2021
+  ],
+  "holdout_performance_computed": false,
+  "model_selected": false
+}

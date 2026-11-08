@@ -1,1 +1,1 @@
-"""S0 research components; no production trading integration."""
+"""Independent S0 endpoint/OLS research. No legacy strategy imports."""
