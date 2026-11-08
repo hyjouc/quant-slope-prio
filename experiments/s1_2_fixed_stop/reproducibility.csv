@@ -1,0 +1,8 @@
+scenario,exact_repeated,training_prefix_exact,future_perturbation_exact
+no_stop,True,True,True
+L01pct,True,True,True
+L02pct,True,True,True
+L03pct,True,True,True
+L04pct,True,True,True
+L05pct,True,True,True
+L06pct,True,True,True

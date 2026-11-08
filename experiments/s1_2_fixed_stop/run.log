@@ -1,0 +1,11 @@
+2026-11-08 18:44:48,924 Frozen config dad6c9a3aadcbfd01f36d30b5b9c7f357a731774bc346b668d06c61b9ca69859; seven predeclared training scenarios; no selection
+2026-11-08 18:44:57,486 CONTROL GATE PASS: no-stop exact frozen executor + serialized original ledgers + equity/drawdown/costs; stopped runs now allowed
+2026-11-08 18:45:17,020 no_stop net=4487.47 DD=2555.87 underwater=220.97d PF=1.172 stops=0 top10-early=0/10 top10-episode-net=4468.00; repeat/causality/ledger PASS
+2026-11-08 18:45:51,381 L01pct net=-36.72 DD=4108.67 underwater=310.58d PF=0.999 stops=1600 top10-early=5/10 top10-episode-net=4399.34; repeat/causality/ledger PASS
+2026-11-08 18:46:24,395 L02pct net=2710.10 DD=3204.13 underwater=289.22d PF=1.082 stops=603 top10-early=3/10 top10-episode-net=4457.90; repeat/causality/ledger PASS
+2026-11-08 18:46:57,771 L03pct net=3666.42 DD=2726.29 underwater=220.97d PF=1.122 stops=274 top10-early=1/10 top10-episode-net=4449.26; repeat/causality/ledger PASS
+2026-11-08 18:47:31,027 L04pct net=3871.07 DD=2731.94 underwater=220.97d PF=1.136 stops=139 top10-early=0/10 top10-episode-net=4468.00; repeat/causality/ledger PASS
+2026-11-08 18:48:06,193 L05pct net=4304.62 DD=2610.14 underwater=220.97d PF=1.158 stops=64 top10-early=0/10 top10-episode-net=4468.00; repeat/causality/ledger PASS
+2026-11-08 18:48:38,977 L06pct net=4329.17 DD=2636.28 underwater=220.97d PF=1.160 stops=44 top10-early=0/10 top10-episode-net=4468.00; repeat/causality/ledger PASS
+2026-11-08 18:49:13,284 COMPLETE seven fixed scenarios; S0/S1.1 frozen bytes unchanged; STOP before selection/holdout
+Delivery QC: 61 tests passed; six figures visually reviewed; all original episodes plus final interval reconcile; fixed baseline frozen, no L chosen; no extra simulations, grid changes or holdout runs.

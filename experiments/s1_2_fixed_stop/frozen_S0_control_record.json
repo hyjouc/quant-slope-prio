@@ -1,0 +1,10 @@
+{
+  "frozen_S0_commit": "fd6658dbde9d046488577062dc53b84ef621c4bf",
+  "frozen_S1_1_commit": "476be2cb349f85732a498e4bd0a7ddefdd44432b",
+  "baseline": "B_ols_N64 without stop",
+  "stop_L_selected": null,
+  "data_sha256": "23972d31dd5ff90b46da05703e1b75dbfbbbbfde6efcd26b6b9ad24ee3b65503",
+  "S0_config_sha256": "17f20bcbd7e66f05b06c30067203122b3066d7260a8ef6e828219dadc122f149",
+  "preserved_all_preexisting_tracked_files": true,
+  "freeze_scope": "Original S0 baseline only; not a chosen stop candidate or authorization for holdout"
+}
