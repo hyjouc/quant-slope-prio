@@ -5,6 +5,7 @@ ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))
 import numpy as np
 import pandas as pd
 from src.data_loader import load_training,sha256
+from src.slope_estimators import estimate
 
 OUT=ROOT/'experiments/s1_3_recent_weighted_slope'
 TEMPLATE=ROOT/'tools/s1_3_explorer_template.html'
@@ -29,6 +30,7 @@ def build():
     stamp=lambda s:int(pd.Timestamp(s).value//10**9)
     index=lambda s:int(dates.get_indexer([pd.Timestamp(s)])[0])
     data=dict(first=stamp(d.date.iloc[0]),step=900,performance=96,models=models,
+        referenceSlope=estimate(d.close,16,'B_ols').tolist(),
         raw={c:d[c].tolist() for c in ['open','high','low','close','volume']},
         slopes={name:slopes[name+'_slope'].tolist() for name in models},
         signals={name:slopes[name+'_signal'].tolist() for name in models},
@@ -60,6 +62,8 @@ def build():
         data_columns=list(data['raw']),models=models,raw_prices='unrounded original training OHLCV',
         source_hashes={str(p.relative_to(ROOT)).replace('\\','/'):sha256(p) for p in [TEMPLATE,Path(__file__),OUT/'slope_signal_paths.csv',OUT/'trades_all.csv',OUT/'executions_all.csv',OUT/'equity_curves.csv']},
         strategy_rerun=False,holdout_used=False,display_only_aggregation='pixel groups of OHLCV / min-max derived-series envelopes; hover always raw bar',
+        slope_display_unit='bp per 15m bar = original log-price slope * 10000; no signal scaling',
+        reference_slope='OLS log-close N16: rolling sixteen 15m observations (four-hour window); display only, no new backtest; distinct from EWLS H16',
         raw_and_derived_separated=True)
     (OUT/'explorer_provenance.json').write_text(json.dumps(evidence,indent=2,ensure_ascii=False),encoding='utf-8')
     manifest=json.loads((OUT/'artifact_manifest.json').read_text())
