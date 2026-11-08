@@ -1,0 +1,6 @@
+2026-11-08 18:21:32,577 Start existing-ledger anatomy only; no new trades, estimator or backtester calls
+2026-11-08 18:21:41,224 S0 artifacts, counts, costs, equity and drawdown reconcile; raw input 70176 training bars
+2026-11-08 18:22:40,961 B_ols_N64 closed=1147 closed-net=4501.90 win-rate=0.347 PF=1.172 mean-win=77.03 mean-loss=-34.92
+2026-11-08 18:22:40,962 B_ols_N96 closed=751 closed-net=3557.61 win-rate=0.341 PF=1.169 mean-win=96.06 mean-loss=-42.49
+2026-11-08 18:22:40,962 Complete six analyses; exact-repeat and group reconciliations PASS; original S0 bytes unchanged. STOP before S1.2.
+Delivery QC: 43 tests passed; six PNGs visually reviewed; independent delivery verifier passed; original S0 manifest/config/results unchanged. No S1.2 run.

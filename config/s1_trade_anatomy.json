@@ -1,0 +1,22 @@
+{
+  "task":"S1.1_TRADE_ANATOMY_2020_2021",
+  "s0_commit":"fd6658dbde9d046488577062dc53b84ef621c4bf",
+  "candidates":["B_ols_N64","B_ols_N96"],
+  "data_path":"E:/freqtrade/user_data/data/slope/stage4_trade_attribution/inputs/ohlcv_pre2024.feather",
+  "data_sha256":"23972d31dd5ff90b46da05703e1b75dbfbbbbfde6efcd26b6b9ad24ee3b65503",
+  "analysis_end_exclusive":"2022-01-01T00:00:00Z",
+  "duration_edges_hours":[0,1,2,4,8,16,32],
+  "duration_bin_closure":"left closed, right open; final bin [32,infinity)",
+  "top_winner_counts":[1,5,10,20],
+  "excursion_path":"actual entry fill anchor; full entry-through-pre-exit candles; raw exit open endpoint; no exit candle high/low/close",
+  "mae_mfe_policy":"nonnegative excursions including entry-price anchor; both percent and actual quantity USDT",
+  "giveback_primary":"MFE USDT minus signed quantity*(raw exit open - actual entry fill)",
+  "giveback_execution_adjusted":"MFE USDT minus ledger gross_after_slippage; primary plus exit slippage, excludes fees",
+  "open_positions":"separate output and marked-to-training-end; never included in closed-trade statistics",
+  "streak_policy":"exit order; nonnegative net trade ends loss streak; directional sequences omit opposite direction trades",
+  "risk_period_accounting":"S0 candle-open label attribution; daily UTC, weekly Monday-Sunday, calendar month; all MTM includes open position",
+  "drawdown_policy":"bar-close MTM; actual close timestamps; recovery tolerance 1e-8 USDT for serialization rounding only",
+  "strategy_modified":false,
+  "parameter_search":false,
+  "stop_or_exit_threshold_tested":false
+}

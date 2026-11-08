@@ -1,0 +1,20 @@
+{
+  "tests_passed": 43,
+  "tests_failed": 0,
+  "s1_new_tests": 9,
+  "closed_trades": 1898,
+  "open_positions_separate": 2,
+  "exact_repeated_analysis": true,
+  "source_s0_unchanged": true,
+  "original_s0_commit": "fd6658dbde9d046488577062dc53b84ef621c4bf",
+  "formulas_and_direction": true,
+  "exit_bar_future_high_low_close_excluded": true,
+  "exit_raw_open_endpoint": true,
+  "costs_and_full_equity_drawdown_reconciled": true,
+  "disjoint_group_counts_reconciled": true,
+  "pnl_periods_reconciled": true,
+  "figures_visually_reviewed": 6,
+  "figure_review": "all trades retained, no clipping of outliers, log count histogram labeled, no smoothing; legends/labels inspected",
+  "post2021_statistics": false,
+  "stop_parameters_tested": false
+}

@@ -1,0 +1,126 @@
+{
+  "config/s1_trade_anatomy.json": {
+    "bytes": 1604,
+    "sha256": "f190df50e45de57e57a70a4bcda7cb375b79b173eedfe61d08c31b5041a0bd89"
+  },
+  "docs/s1_trade_anatomy_protocol.md": {
+    "bytes": 2233,
+    "sha256": "ed10ca2495d2afff7c55d3f243d8c24d3583dc15344fb3e7ee7ec7583a05cab9"
+  },
+  "experiments/s1_trade_anatomy/anatomy_equity_curves.csv": {
+    "bytes": 33677610,
+    "sha256": "e0ae232b46ffb0bb4e07ce6581c70bf52f2f7db1f1154cbd005f23f189502f87"
+  },
+  "experiments/s1_trade_anatomy/cohort_summary.csv": {
+    "bytes": 1657,
+    "sha256": "1206f7bdb2f500bead54b1479fef3e44c5719010ed30b55ec0fc2c95aaf9c6ca"
+  },
+  "experiments/s1_trade_anatomy/diagnostic_metadata.json": {
+    "bytes": 5917,
+    "sha256": "8eef8cac3363ab4b856b873070152c31525f7141788b3ef8bcc6ac5caf6d6821"
+  },
+  "experiments/s1_trade_anatomy/drawdown_episodes.csv": {
+    "bytes": 160770,
+    "sha256": "3afcace46ea92841935e957588742be03d15eb2eb848bb7e2c1d75be9da2ff77"
+  },
+  "experiments/s1_trade_anatomy/figures/holding_duration.png": {
+    "bytes": 121522,
+    "sha256": "f9b2ced161e23928f0978d211517cfe0376163189345fa54ac373427cb5bb4f4"
+  },
+  "experiments/s1_trade_anatomy/figures/long_short_distribution.png": {
+    "bytes": 74207,
+    "sha256": "730554e97c8c0834f5a87e86e7e65b52d238a55f28b7d9173aa79fae74a1a21c"
+  },
+  "experiments/s1_trade_anatomy/figures/loss_runs_drawdowns.png": {
+    "bytes": 381051,
+    "sha256": "04a9e745479338268fe44e9fa785a8f396bc973fd5cd84a782fabd455e8970f9"
+  },
+  "experiments/s1_trade_anatomy/figures/mae_mfe_scatter.png": {
+    "bytes": 287897,
+    "sha256": "82bfd77e865ddd562f7d0ea9e76a5693e6b761caf75a83291c5605326aff26a0"
+  },
+  "experiments/s1_trade_anatomy/figures/mfe_actual_profit.png": {
+    "bytes": 189376,
+    "sha256": "6143d79b31e50b01ae418b74568344ffbc645122ce91d775181fb883176aefa6"
+  },
+  "experiments/s1_trade_anatomy/figures/pnl_distribution.png": {
+    "bytes": 164587,
+    "sha256": "66df71e1d1734b02c01f349fe225e84a77abfe7ce0bb2a8d687fc106ed1ab080"
+  },
+  "experiments/s1_trade_anatomy/holding_duration_analysis.csv": {
+    "bytes": 4674,
+    "sha256": "8c76f247fc443a424f4c973cd6e7e33ce4cb7c9b50c5764199b3054cc4e6aa6f"
+  },
+  "experiments/s1_trade_anatomy/long_short_comparison.csv": {
+    "bytes": 2681,
+    "sha256": "0946c879b0473cbda3c1b3253e1489556fcb27d509d71149a5c586e088e30b21"
+  },
+  "experiments/s1_trade_anatomy/loss_cluster_analysis.csv": {
+    "bytes": 2233,
+    "sha256": "f3d97940b39c0ed5ca1794ef3886a3c705d3896d903c54dc3fbf6ab9371a693e"
+  },
+  "experiments/s1_trade_anatomy/loss_streak_distribution.csv": {
+    "bytes": 3148,
+    "sha256": "f9f5f13391f5ab592be19545e33d69bb70a4b2dec1c358f6d765d45f21a804ad"
+  },
+  "experiments/s1_trade_anatomy/loss_streaks.csv": {
+    "bytes": 140982,
+    "sha256": "8825df44d7a5ec7068ab277623bdc5f926bebe61f830826c8bc90f4c90a5729e"
+  },
+  "experiments/s1_trade_anatomy/mae_mfe_analysis.csv": {
+    "bytes": 17909,
+    "sha256": "86ec64f896c874caa331945d2e8c9f46e69c4cdd6051847a54df74175da5a522"
+  },
+  "experiments/s1_trade_anatomy/open_positions.csv": {
+    "bytes": 1724,
+    "sha256": "550163ed9d6e1f34dca6a49dab25912fed5f41ce7b164c49d90338bae4a5b022"
+  },
+  "experiments/s1_trade_anatomy/period_pnl.csv": {
+    "bytes": 372155,
+    "sha256": "a8968a83fff1639f4e24419846b6142aa18a629f70b62b66eed0ad8aa478c4f5"
+  },
+  "experiments/s1_trade_anatomy/profit_concentration.csv": {
+    "bytes": 3532,
+    "sha256": "3f62dc15a566eddb012d260701bc89e426ef04417f148d546964988cc1c8a407"
+  },
+  "experiments/s1_trade_anatomy/profit_giveback_analysis.csv": {
+    "bytes": 27450,
+    "sha256": "52a3b6ee49de565c64e6e7bbe094965cbc066d7fcb52328ed739ac908a96dfa6"
+  },
+  "experiments/s1_trade_anatomy/run.log": {
+    "bytes": 761,
+    "sha256": "80a801993960153351a9bdcb3e8ac9f650ce663dbfc33ac941848e954a5492b0"
+  },
+  "experiments/s1_trade_anatomy/run_analysis.py": {
+    "bytes": 29995,
+    "sha256": "06d50ea84c4223bc9e74d1f5d29ceaf7f1e6a33df1c7ac3eb0278154037823ff"
+  },
+  "experiments/s1_trade_anatomy/s1_trade_anatomy_report.md": {
+    "bytes": 18377,
+    "sha256": "4e29b838b7878e90a989d23f1d2c9be6b89e37d4e3e3888b337ed17f79372027"
+  },
+  "experiments/s1_trade_anatomy/top20_winner_paths.csv": {
+    "bytes": 25563,
+    "sha256": "1b9fd3ad22dca88a4ad2d0ceedbb847868b96a2da718ebc4db60a162ff2b3d8a"
+  },
+  "experiments/s1_trade_anatomy/trade_level_metrics.csv": {
+    "bytes": 1181892,
+    "sha256": "175ad9eb16359573b4016f478306d06f0e4d94d2557dafdf90b72c35d29b0010"
+  },
+  "src/trade_anatomy.py": {
+    "bytes": 13196,
+    "sha256": "8cd6abb3c63ad3f27f4d1097cb3e8f58a398d71a3cf40fcbbf76f6e3eb79ee6f"
+  },
+  "tests/test_trade_anatomy.py": {
+    "bytes": 4239,
+    "sha256": "ff23680461a5c53408dd79908468294bd7fb93b9be819928d1aea265ad58c2f1"
+  },
+  "tools/verify_s1_anatomy.py": {
+    "bytes": 3480,
+    "sha256": "c0252c192a6e764455b5ef83ba52b7df9b22eafa054d67eda8654c044237dd2e"
+  },
+  "experiments/s1_trade_anatomy/quality_control.json": {
+    "bytes": 763,
+    "sha256": "47e2230921b134f8fe57130b5e8cb8f1b990a0d4910caae5fbfc3de50a3c4a1a"
+  }
+}
