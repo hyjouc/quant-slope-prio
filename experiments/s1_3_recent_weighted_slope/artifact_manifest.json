@@ -145,12 +145,12 @@
       "bytes": 1167
     },
     "explorer_provenance.json": {
-      "sha256": "626a7a5e548829c5aa918c5908eda098113b5f2ba0253819577e0bd63fe3ce33",
+      "sha256": "c27e9c8f82e5f0d93158702b377fd77f8e65e3c5045ba705d50d48810b96a033",
       "bytes": 1936
     },
     "market_explorer.html": {
-      "sha256": "dad962d4e82fe843c431f08572c5b71b0c70495dad3aaccabe32da1125db2ced",
-      "bytes": 19956563
+      "sha256": "4a5da7974625d4b3d8133aac93d92f0ef50caf04bf3a6cf2e35ed7883be99a35",
+      "bytes": 19955835
     },
     "explorer_preview.png": {
       "sha256": "f649b4293e6a352ff7302df7b83ed9d5b6564614002c1d8b04ef437348294b59",

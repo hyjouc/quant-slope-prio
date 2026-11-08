@@ -18,7 +18,7 @@ def clean(value):
     return value
 
 def hourly_reference(d):
-    """Hourly N64 OLS, available only after each UTC hour closes.
+    """Hourly N32 OLS, available only after each UTC hour closes.
 
     Return per-15m-equivalent units for the existing chart's internal coordinate;
     chart/hover convert all series to bp/hour. No signal or trade is generated.
@@ -26,7 +26,7 @@ def hourly_reference(d):
     hourly=d.set_index('date').resample('1h',closed='left',label='left',origin='start_day').agg(
         close=('close','last'),count=('close','size'))
     hourly=hourly[hourly['count']==4]
-    beta=estimate(hourly.close,64,'B_ols')
+    beta=estimate(hourly.close,32,'B_ols')
     available=pd.Series(beta/4,index=hourly.index+pd.Timedelta(hours=1))
     closes=pd.DatetimeIndex(d.date)+pd.Timedelta(minutes=15)
     return available.reindex(closes,method='ffill').to_numpy()
@@ -77,7 +77,7 @@ def build():
         source_hashes={str(p.relative_to(ROOT)).replace('\\','/'):sha256(p) for p in [TEMPLATE,Path(__file__),OUT/'slope_signal_paths.csv',OUT/'trades_all.csv',OUT/'executions_all.csv',OUT/'equity_curves.csv']},
         strategy_rerun=False,holdout_used=False,display_only_aggregation='pixel groups of OHLCV / min-max derived-series envelopes; hover always raw bar',
         slope_display_unit='bp/hour: original 15m slope * 40000; hourly reference internal value = hourly slope / 4, display * 40000; no signal scaling',
-        reference_slope='OLS log-close N64 on complete UTC 1h candles (four contiguous raw bars each), trailing sixty-four hourly closes; available only at hour close; held until next hour close; display only, no new backtest',
+        reference_slope='OLS log-close N32 on complete UTC 1h candles (four contiguous raw bars each), trailing thirty-two hourly closes; available only at hour close; held until next hour close; display only, no new backtest',
         raw_and_derived_separated=True)
     (OUT/'explorer_provenance.json').write_text(json.dumps(evidence,indent=2,ensure_ascii=False),encoding='utf-8')
     manifest=json.loads((OUT/'artifact_manifest.json').read_text())
