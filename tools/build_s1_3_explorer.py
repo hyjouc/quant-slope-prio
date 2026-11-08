@@ -5,7 +5,6 @@ ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT))
 import numpy as np
 import pandas as pd
 from src.data_loader import load_training,sha256
-from src.slope_estimators import estimate
 
 OUT=ROOT/'experiments/s1_3_recent_weighted_slope'
 TEMPLATE=ROOT/'tools/s1_3_explorer_template.html'
@@ -17,19 +16,6 @@ def clean(value):
     if isinstance(value,np.generic):return value.item()
     return value
 
-def hourly_reference(d):
-    """Hourly N32 OLS, available only after each UTC hour closes.
-
-    Return per-15m-equivalent units for the existing chart's internal coordinate;
-    chart/hover convert all series to bp/hour. No signal or trade is generated.
-    """
-    hourly=d.set_index('date').resample('1h',closed='left',label='left',origin='start_day').agg(
-        close=('close','last'),count=('close','size'))
-    hourly=hourly[hourly['count']==4]
-    beta=estimate(hourly.close,32,'B_ols')
-    available=pd.Series(beta/4,index=hourly.index+pd.Timedelta(hours=1))
-    closes=pd.DatetimeIndex(d.date)+pd.Timedelta(minutes=15)
-    return available.reindex(closes,method='ffill').to_numpy()
 
 def build():
     protocol=json.loads((ROOT/'config/s1_3_recent_weighted_slope.json').read_text())
@@ -44,7 +30,6 @@ def build():
     stamp=lambda s:int(pd.Timestamp(s).value//10**9)
     index=lambda s:int(dates.get_indexer([pd.Timestamp(s)])[0])
     data=dict(first=stamp(d.date.iloc[0]),step=900,performance=96,models=models,
-        referenceSlope=hourly_reference(d).tolist(),
         raw={c:d[c].tolist() for c in ['open','high','low','close','volume']},
         slopes={name:slopes[name+'_slope'].tolist() for name in models},
         signals={name:slopes[name+'_signal'].tolist() for name in models},
@@ -76,8 +61,7 @@ def build():
         data_columns=list(data['raw']),models=models,raw_prices='unrounded original training OHLCV',
         source_hashes={str(p.relative_to(ROOT)).replace('\\','/'):sha256(p) for p in [TEMPLATE,Path(__file__),OUT/'slope_signal_paths.csv',OUT/'trades_all.csv',OUT/'executions_all.csv',OUT/'equity_curves.csv']},
         strategy_rerun=False,holdout_used=False,display_only_aggregation='pixel groups of OHLCV / min-max derived-series envelopes; hover always raw bar',
-        slope_display_unit='bp/hour: original 15m slope * 40000; hourly reference internal value = hourly slope / 4, display * 40000; no signal scaling',
-        reference_slope='OLS log-close N32 on complete UTC 1h candles (four contiguous raw bars each), trailing thirty-two hourly closes; available only at hour close; held until next hour close; display only, no new backtest',
+        slope_display_unit='bp/hour: original 15m slope * 40000; no signal scaling',
         raw_and_derived_separated=True)
     (OUT/'explorer_provenance.json').write_text(json.dumps(evidence,indent=2,ensure_ascii=False),encoding='utf-8')
     manifest=json.loads((OUT/'artifact_manifest.json').read_text())

@@ -1,6 +1,6 @@
 {
   "html": "experiments/s1_3_recent_weighted_slope/market_explorer.html",
-  "html_sha256": "4a5da7974625d4b3d8133aac93d92f0ef50caf04bf3a6cf2e35ed7883be99a35",
+  "html_sha256": "f9d4a8b69f15caed037e9446a2e410fb50c9873f8107df0e86d6858e08b177fd",
   "raw_sha256": "23972d31dd5ff90b46da05703e1b75dbfbbbbfde6efcd26b6b9ad24ee3b65503",
   "raw_rows": 70176,
   "start": "2020-01-01 00:00:00+00:00",
@@ -21,8 +21,8 @@
   ],
   "raw_prices": "unrounded original training OHLCV",
   "source_hashes": {
-    "tools/s1_3_explorer_template.html": "2f21b342613344801ade2fc41cd9fa9e7d253df0ab260fd27ff9d600f3d243d7",
-    "tools/build_s1_3_explorer.py": "dbe0706fe5a6e81993e655cebca25cb340efd239fb03df1848b738e9eeb366d7",
+    "tools/s1_3_explorer_template.html": "41aaf36110019ccb6088edd9f1a2219a4c80fdbf6e99dd959d5aae8e37d1c0d1",
+    "tools/build_s1_3_explorer.py": "74a0d11c0c419856a3f5bb9b7a3650b8bb867b2c81d4f074a9c2b038c2f3421a",
     "experiments/s1_3_recent_weighted_slope/slope_signal_paths.csv": "9fb5e3124f2625eddd042efd7d2d7ed12f642e0b07ae6fc23d8263c09992faca",
     "experiments/s1_3_recent_weighted_slope/trades_all.csv": "fbf45a0056965388458c4471e2b081edd73c64c77cc55eecf9888183cf94f087",
     "experiments/s1_3_recent_weighted_slope/executions_all.csv": "8e27ec1376b9d750e78cee259b627a2d7b484a79c4ed54782eaf120c7a4d7496",
@@ -31,7 +31,6 @@
   "strategy_rerun": false,
   "holdout_used": false,
   "display_only_aggregation": "pixel groups of OHLCV / min-max derived-series envelopes; hover always raw bar",
-  "slope_display_unit": "bp/hour: original 15m slope * 40000; hourly reference internal value = hourly slope / 4, display * 40000; no signal scaling",
-  "reference_slope": "OLS log-close N32 on complete UTC 1h candles (four contiguous raw bars each), trailing thirty-two hourly closes; available only at hour close; held until next hour close; display only, no new backtest",
+  "slope_display_unit": "bp/hour: original 15m slope * 40000; no signal scaling",
   "raw_and_derived_separated": true
 }
