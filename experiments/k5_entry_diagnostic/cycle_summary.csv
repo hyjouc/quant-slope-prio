@@ -1,0 +1,3 @@
+direction,cycles,cycles_with_events,cycles_without_event,cycles_with_repeated_events,events,first_events,later_events,median_events_per_active_cycle,max_events_per_cycle,repeated_cycle_ratio,median_within_cycle_event_gap_hours
+long,574,539,35,265,1072,539,533,1,10,0.49165120593692024,4
+short,574,537,37,281,1224,537,687,2,11,0.52327746741154557,4.75

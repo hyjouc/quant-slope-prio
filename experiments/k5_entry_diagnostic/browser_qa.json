@@ -1,0 +1,14 @@
+{
+  "browser": "Chrome / Python Playwright",
+  "page_errors": [],
+  "initial_raw_rows": 70176,
+  "all_events": 2296,
+  "first_long_filter_count": 539,
+  "passed": [
+    "first-long filter",
+    "click event focus",
+    "full range and zoom",
+    "empty censored filter",
+    "390px mobile no overflow"
+  ]
+}

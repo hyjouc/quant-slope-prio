@@ -1,0 +1,3 @@
+PASS original S0 N64 control gate; no new strategy simulations
+Complete all events=2296 | first=1076 | censored=0; these are NOT portfolio trade counts
+PASS entry-only diagnostic complete. STOP; no tau selection, no exits optimized, no holdout results.

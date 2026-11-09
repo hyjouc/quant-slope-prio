@@ -1,0 +1,96 @@
+{
+  "protocol": {
+    "task": "K5_EARLY_ENTRY_DIAGNOSTIC_2020_2021",
+    "N": 64,
+    "K": 5,
+    "tau": 0,
+    "tau_status": "zero boundary diagnostic only; not optimized",
+    "signal": "long: beta[t]<0 and g[t-1]<=0 and g[t]>0; short mirror; both g observations finite; strict zero, no epsilon, no zero carry for g crossings",
+    "g": "OLS of five beta values; [-2,-1,0,1,2]/10; use unscaled beta for event calculation",
+    "performance_first_execution": "2020-01-02T00:00:00Z",
+    "end_exclusive": "2022-01-01T00:00:00Z",
+    "cycle": "maximal beta sign run; exact beta zero retains last nonzero cycle sign; first observed run left-truncated; all warmup events counted for ordinal before performance filtering",
+    "confirmation": "first strictly opposite beta sign after event; zero alone not confirmation; signal observed and next-open execution availability distinguished",
+    "outcomes": "interval from next-open actual hypothetical entry to first executable confirmation next-open; if no executable confirmation, mark at final training close, no synthetic exit fee; report censored separately",
+    "excursions": "slipped entry anchor; include entry bar through bar before confirmation execution; include exit raw open endpoint, exclude exit candle high/low; training-censored includes last candle high/low and final close; clamp MAE/MFE at zero; no invented intrabar order",
+    "costs": {
+      "notional": 2000,
+      "fee": 0.0005,
+      "slippage": 0.0002
+    },
+    "fixed_horizon_bars": [
+      4,
+      16,
+      64
+    ],
+    "fixed_horizon_use": "description only, not holding-period optimization; all events with endpoint inside training, unavailable endpoints retained in availability counts",
+    "first_vs_later": "ordinal within complete sign-cycle event history, including warmup; no best-event selection; period-boundary truncated cycles flagged",
+    "background": "all valid same-sign-beta bars, same next-open costs and horizons; overlapping descriptive comparison, not independent controls or executable portfolio",
+    "winner_diagnostic": "original OLS N64 top10 closed net winners, preceding beta sign cycle; compare all events and first event without hindsight choice; no modified-trade PnL claim",
+    "no_strategy_backtest": true,
+    "no_parameter_search": true,
+    "holdout_performance": false,
+    "read_2024_plus": false,
+    "selected_model": null
+  },
+  "data": {
+    "path": "E:\\freqtrade\\user_data\\data\\slope\\stage4_trade_attribution\\inputs\\ohlcv_pre2024.feather",
+    "sha256": "23972d31dd5ff90b46da05703e1b75dbfbbbbfde6efcd26b6b9ad24ee3b65503",
+    "raw_bars": 140256,
+    "raw_first": "2020-01-01 00:00:00+00:00",
+    "raw_last": "2023-12-31 23:45:00+00:00",
+    "missing": 0,
+    "duplicates": 0,
+    "raw_zero_volume": 97,
+    "training_bars": 70176,
+    "training_first": "2020-01-01 00:00:00+00:00",
+    "training_last": "2021-12-31 23:45:00+00:00",
+    "training_zero_volume": 39,
+    "columns_read": [
+      "date",
+      "open",
+      "high",
+      "low",
+      "close",
+      "volume"
+    ],
+    "holdout_usage": "snapshot structural QC only; 2022/2023 removed before indicators/execution/metrics",
+    "policy": "zero-volume records retained unchanged; no forward fill or price imputation"
+  },
+  "baseline_gate": {
+    "equal_weight_slopes": "bitwise identical including warmup NaNs",
+    "signals": "exact",
+    "trade_ledger": "exact at original CSV precision %.12g",
+    "execution_ledger": "exact at original CSV precision %.12g",
+    "curve_max_absolute_error": 4.999856173526496e-08,
+    "drawdown_max_absolute_error": 4.999947122996673e-09,
+    "direction_cost_and_metrics": "all independently matched at 1e-6 absolute tolerance"
+  },
+  "base_commit": "6dda57976364939644cc9b136a20054212c7c132",
+  "python": "3.14.3",
+  "source_sha256": {
+    "config/k5_entry_diagnostic.json": "26f4624f5f9495c1d4af76fdfe5566eabf194a05142c9f1a3185ac06d290b61b",
+    "src/k5_entry_diagnostic.py": "b9598ff5e38d7afdcda30aa25809469e30600920236558755dc6d68b659d4231",
+    "tests/test_k5_entry_diagnostic.py": "e74193cb517b5dbf9ed553c644dac4e82f1e60954040cea4c19eed8045f40179",
+    "experiments/k5_entry_diagnostic/run_analysis.py": "2f59203599550bf8785d081e06d491a0a2e840af383b156f7722613579cc5b63",
+    "tools/k5_entry_template.html": "42d01a8e59dd58891dac07fa30278777ea0082ccdc2a9c055ac164a2aaba42e0",
+    "tools/verify_k5_entry.py": "de4d9f151bef4a1f7d2b69592bb4ee5a1eafafd975999fde4829d0bc5d0cada2",
+    "src/data_loader.py": "e97b55f9365a8a5df9b214915bb20b6360e3ff79fc9ecc54b7764d929073074c",
+    "src/slope_estimators.py": "e0771eb57813bd368e1c432c3fb2811a24f13df5b4c56b304118643169dbc712",
+    "src/signal_generator.py": "9936fe942b30c2f01a39218aaccc7964822fcca1a28bcd50a0a351522e4816d8",
+    "src/backtester.py": "c6e9829c9e6b2e2a242c09a300faedee9ffb6d2fb3a7d653e1167364cad2f7ed",
+    "src/metrics.py": "764fb8e4510ad005f7f2980914ef64fd76b982a5a2c47f1291b0f46997297855",
+    "experiments/s1_3_recent_weighted_slope/market_explorer.html": "f9d4a8b69f15caed037e9446a2e410fb50c9873f8107df0e86d6858e08b177fd"
+  },
+  "checks": [
+    "S0 gate",
+    "K5 independent regression",
+    "prefix and future perturbation",
+    "next-open time",
+    "gross/cost/net reconciliation",
+    "all/first/later groups exhaustive",
+    "right censoring retained"
+  ],
+  "no_new_portfolio_backtest": true,
+  "interpretation": "event counts not trade counts; overlapping outcomes not summed; future confirmation used only to describe outcomes, never select events"
+}

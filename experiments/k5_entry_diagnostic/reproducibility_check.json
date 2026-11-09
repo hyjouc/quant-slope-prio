@@ -1,0 +1,19 @@
+{
+  "identical_csv_and_html_rerun": true,
+  "sha256": {
+    "censored_events.csv": "c0f770fcaf0678c58d7953fc1922479d3ee0f3d26d6b7762f4f4f02490055440",
+    "cycle_summary.csv": "4432635040b8977aab5a2a53bfdf0074cee41babbcc212c7133f83864d93469b",
+    "cycles.csv": "871ed137f9f56af3da1988433ebf7340cba22092c5708f220e0c3f8d944c9e80",
+    "event_explorer.html": "91e41880c1f0bd133cea13eba2ed289b085e8e23321b121fdbe4081aed7129fa",
+    "event_summary.csv": "36a3811b46ace8ca2ad427b7f0f5c279a2311714d88c2b23b7c5267d29b81174",
+    "events.csv": "b888bdda614510ffb3b139d8d80f5f87cb7e61c1f291f9404a4f539ee2258ae2",
+    "extreme_mae_events.csv": "997f01973cd4ebc29624ebd79edcd3303a2492945533ddf4dd8c831d6a5789ac",
+    "fixed_horizon_details.csv": "18835f00b6ac5fe1e61a5749fb237e8516970feca895f38e5d301125e10436cf",
+    "fixed_horizon_summary.csv": "7200367a75a8fa4643047c14eb894df5f78d83c4f8d1fc13957a79ad980d23b2",
+    "original_top10_first_events.csv": "31c886d86c8e4f32f07a6c3b872b0a8f9a892a619f383df5ebe66cc26999fec9",
+    "original_top10_mapping.csv": "56748fdfe066c4fd70de55f02b8e1366372a170b04fdc190b6d6d243f2562863",
+    "original_top10_preentry_events.csv": "f91770aac2110e3834d3434eaa8b156ebadfe8fdcbd7d79586f48e923c8567dc",
+    "signals.csv": "4b860dfb320adf0044346603f60777f0eb458cfb4baf3d86b166ca77d176f62b",
+    "zero_volume_event_endpoints.csv": "d12c3244f37eacab832f91989eb1cf25f682912382d93f429c4a62fe4765fe22"
+  }
+}
